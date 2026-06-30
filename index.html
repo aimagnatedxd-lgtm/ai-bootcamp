@@ -27,7 +27,7 @@
     }
 
     html {
-      scroll-behavior: smooth; /* Enhances UX for internal anchor links */
+      scroll-behavior: smooth;
     }
 
     body {
@@ -70,7 +70,7 @@
       top: 0;
       z-index: 20;
       backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px); /* Safari support */
+      -webkit-backdrop-filter: blur(18px);
       background: rgba(5, 8, 18, 0.85);
       border-bottom: 1px solid rgba(255,255,255,0.06);
     }
@@ -265,16 +265,9 @@
     .poster-card img {
       width: 100%;
       height: auto;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      display: block;
       border-radius: 22px;
       border: 1px solid rgba(255,255,255,0.14);
-      transition: transform 0.5s ease;
-    }
-
-    .poster-card:hover img {
-      transform: scale(1.02);
+      display: block;
     }
 
     .section {
@@ -371,14 +364,14 @@
       font-size: 16px;
       color: #fff;
       outline: none;
-      list-style: none; /* Hide default arrow in some browsers */
+      list-style: none;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
     summary::-webkit-details-marker {
-      display: none; /* Hide default arrow in webkit */
+      display: none;
     }
 
     summary::after {
@@ -440,7 +433,6 @@
       box-shadow: 0 20px 45px rgba(37, 211, 102, 0.4);
     }
 
-    /* Mobile UX Fixes */
     @media (max-width: 920px) {
       .hero-grid {
         grid-template-columns: 1fr;
@@ -465,7 +457,7 @@
       }
 
       .nav-links {
-        display: none; /* Keeps mobile nav clean, focus on the button */
+        display: none;
       }
     }
 
@@ -484,7 +476,7 @@
       }
 
       .trust-row {
-        grid-template-columns: 1fr; /* Stack trust cards on mobile for readability */
+        grid-template-columns: 1fr;
         gap: 12px;
       }
 
@@ -550,7 +542,7 @@
         </div>
 
         <div class="poster-card">
-          <img src="hero-poster.png" alt="AI Income Skills Bootcamp Poster" />
+          <img src="hero-poster.png" alt="AI Income Skills Bootcamp" />
         </div>
       </div>
     </header>
@@ -625,7 +617,6 @@
   </a>
 
   <style>
-    /* Add this quick fix so mobile CTA shows up if nav-links hide */
     @media (max-width: 920px) {
       #mobile-nav-cta { display: inline-flex !important; }
     }
